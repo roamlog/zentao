@@ -5,7 +5,7 @@
 [![ImageLayers Size](https://img.shields.io/imagelayers/image-size/roamlog/zentao/latest.svg)](https://hub.docker.com/r/roamlog/zentao/)
 [![ImageLayers Layers](https://img.shields.io/imagelayers/layers/roamlog/zentao/latest.svg)](https://hub.docker.com/r/roamlog/zentao/)
 
-Auto build docker image for zentao(禅道),include open source edition and pro edition.
+Auto build docker image for zentao(禅道).
 
 DockerHub:[https://hub.docker.com/r/roamlog/zentao/](https://hub.docker.com/r/roamlog/zentao/)
 
