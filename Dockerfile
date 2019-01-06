@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:latest
 MAINTAINER Roamlog Lee <roamlog@gmail.com>
 
 ENV ZENTAO_VER=11.0
