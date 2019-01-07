@@ -1,7 +1,7 @@
 version: "2"
 services: 
   zentao:
-    image: roamlog/zentao:latest
+    image: roamlog/zentao:alpine
     container_name: zentao
     # if web response code: 310 ERR_TOO_MANY_REDIRECTS, please use host mode.
 #    network_mode: "host"
@@ -17,5 +17,5 @@ services:
       BIND_ADDRESS: "false"
       SMTP_HOST: "163.177.90.125 smtp.exmail.qq.com"
     volumes:
-      - /srv/zentao/zbox/:/opt/zbox/
+      - ./../zboxAlpine/:/opt/zbox/
     restart: always

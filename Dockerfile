@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM alpine:3.8
 MAINTAINER Roamlog Lee <roamlog@gmail.com>
 
 ENV ZENTAO_VER=11.0
@@ -7,9 +7,9 @@ ARG ZENTAO_URL=http://dl.hzbuvi.com/zentao/${ZENTAO_VER}/ZenTaoPMS.${ZENTAO_VER}
 
 COPY docker-entrypoint /usr/local/bin/docker-entrypoint
 
-RUN apt-get update \
-       && apt-get install -y wget php-ldap --no-install-recommends \
-       && rm -r /var/lib/apt/lists/* \
+RUN apk update \
+       && apk add --no-cache --virtual .build-deps \
+       wget \
        && wget ${ZENTAO_URL} -O zbox.tar.gz \
        && mv zbox.tar.gz /tmp \
        && chmod +x /usr/local/bin/docker-entrypoint

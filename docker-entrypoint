@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 
 MYSQL_CONFIG="/opt/zbox/etc/mysql/my.cnf"
