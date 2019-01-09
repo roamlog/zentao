@@ -4,7 +4,7 @@ MAINTAINER Roamlog Lee <roamlog@gmail.com>
 ENV ZENTAO_VER=11.0
 ENV DEBIAN_FRONTEND noninteractive
 
-ARG ZENTAO_URL=http://dl.hzbuvi.com/zentao/${ZENTAO_VER}/ZenTaoPMS.${ZENTAO_VER}.stable.zbox_64.tar.gz
+ARG ZENTAO_URL=http://dl.cnezsoft.com/zentao/${ZENTAO_VER}/ZenTaoPMS.${ZENTAO_VER}.stable.zbox_64.tar.gz
 
 COPY docker-entrypoint /usr/local/bin/docker-entrypoint
 
