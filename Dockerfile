@@ -17,6 +17,6 @@ RUN apt-get update \
 
 HEALTHCHECK --start-period=20s --interval=45s --timeout=3s CMD wget http://localhost/ -O /dev/null || exit 1
 
-EXPOSE 9000 33306
+EXPOSE 9000 3306
 
 ENTRYPOINT ["docker-entrypoint"]
