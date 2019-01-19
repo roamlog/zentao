@@ -1,0 +1,16 @@
+version: "3"
+services: 
+  zentao:
+    image: roamlog/zentao
+    container_name: zentao
+    ports:
+      - "9999:9999"
+      - "33306:33306"
+    environment:
+      USER: "root"
+      PASSWD: "ua7XWu49Rt8GzsXb"
+      BIND_ADDRESS: "false"
+      SMTP_HOST: "163.177.90.125 smtp.exmail.qq.com"
+    volumes:
+      - $PWD/zbox/:/opt/zbox/
+    restart: always

@@ -22,7 +22,7 @@ elif [ "$#" == "0" ]; then
     fi
   fi
   export PATH=/opt/zbox/:$PATH
-  cat /opt/zbox/README && zbox start -ap 9000
+  cat /opt/zbox/README && zbox start -ap 9999 -mp 33306
   if [ -n "${USER}" -a -n "${PASSWD}" ]; then
     /opt/zbox/bin/htpasswd -b /opt/zbox/auth/users ${USER} ${PASSWD}
   fi
